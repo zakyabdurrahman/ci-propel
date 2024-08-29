@@ -1,0 +1,18 @@
+propel:
+    database:
+        connections:
+            default:
+                adapter: pgsql
+                dsn: pgsql:host=localhost;port=5432;dbname=propelci
+                user: postgres
+                password: postgres
+                settings:
+                    charset: utf8
+    runtime:
+      defaultConnection: default
+      connections:
+          - default
+    generator:
+        defaultConnection: default
+        connections:
+            - default
